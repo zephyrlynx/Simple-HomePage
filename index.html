@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Attendeaze</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEOm0PVECLnbjkhNK_YR3Irjp1ADjVzJDmaUJiDpvLczqyWD-x8yx7-0opoHgyollL1wTWgP8zG9o&usqp=CAU&ec=48665701" alt="Attendeaze" width="30" height="24">
+          </a>
+          <a class="navbar-brand" href="#">Attendeaze</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Pricing</a>
+              </li>
+              <!--<li class="nav-item">
+                <a class="nav-link" href="login.html">Login</a>
+              </li>-->
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutus">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+            <div class="mx-2">
+              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+<!--Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Sign Up Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="signupModalLabel">Sign Up</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3">
+            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" id="cexampleInputPassword1">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Create Account</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Top most crousel-->
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.responsiveclassroom.org/wp-content/uploads/2021/06/AdobeStock_361380458-scaled.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Attendeaze</h2>
+              <p>The Future of taking Attendance</p>
+              <!--Buttons for Design-->
+              <button type="button" class="btn btn-light">Accessible Interface</button>
+              <button type="button" class="btn btn-secondary">Attendance Marking</button>
+              <button type="button" class="btn btn-dark">Real-Time Tracking</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D&w=1000&q=80" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Attendeaze</h2>
+                <p>The Future of taking Attendance</p>
+                <button type="button" class="btn btn-light">Accessible Interface</button>
+              <button type="button" class="btn btn-secondary">Attendance Marking</button>
+              <button type="button" class="btn btn-dark">Real-Time Tracking</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://chalkbeat.brightspotcdn.com/dims4/default/9273f28/2147483647/strip/true/crop/640x360+0+33/resize/1665x937!/quality/90/?url=https%3A%2F%2Fcdn.vox-cdn.com%2Fthumbor%2FT5thdaaIBpr0KRHqjqtIWLAkwDg%3D%2F0x0%3A640x427%2F640x427%2Ffilters%3Afocal%28320x213%3A321x214%29%2Fcdn.vox-cdn.com%2Fuploads%2Fchorus_asset%2Ffile%2F19839034%2FTeacher_with_TN_students.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2>Attendeaze</h2>
+                <p>The Future of taking Attendance</p>
+                <button type="button" class="btn btn-light">Accessible Interface</button>
+              <button type="button" class="btn btn-secondary">Attendance Marking</button>
+              <button type="button" class="btn btn-dark">Real-Time Tracking</button>
+            </div>
+          </div>
+          <!--Crousel for Quotes automatic-->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br>
+      <br>
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner bg-dark">
+          <div class="carousel-item active">
+            <h2 class="text-center text-light font-weight-bold ">Showing up is 75 percent of life.</h2>
+        </div>
+          <div class="carousel-item">
+            <h2 class="text-center text-light font-weight-bold">Your presence matters. Show up, be engaged, and make a difference.</h2>
+          </div>
+          <div class="carousel-item">
+            <h2 class="text-center text-light font-weight-bold">I didn't realize being punctual was a requirement. I thought it was a suggestion. </h2>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!--Features code-->
+      <div id="features">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="https://www.algonquincollege.com/corporate/files/2020/11/iStock-1154231467.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">User Authentication</h1>
+            <p class="lead">Online attendance systems require users to authenticate themselves before marking attendance. This can be done through username and password, biometric data, or other methods to ensure the attendance record is accurate and secure.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="https://businessblog.trivago.com/wp-content/uploads/2019/02/lukas-blazek-367945-unsplash.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Reporting and Analytics</h1>
+            <p class="lead">The system generates attendance reports and analytics, providing insights into attendance patterns, trends, and individual attendance records. These reports can be used for administrative purposes, performance evaluations, or compliance requirements.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="https://www.informatica.com/content/dam/informatica-com/en/blogs/uploads/2021/blogs/b09/b09-data-security-vs-data-privacy-whats-the-difference.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Data Security and Privacy</h1>
+            <p class="lead">Online attendance systems should prioritize data security and protect sensitive user information. This includes implementing encryption, access controls, and adhering to privacy regulations to safeguard user data.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="https://www.masterteachingonline.com/wp-content/uploads/2020/05/Demo-How-To-Take-Attendance-In-Google-Classroom-01.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Attendance Marking</h1>
+            <p class="lead">The system provides a mechanism for users to mark their attendance electronically. This can be done through a web portal, mobile app, or other digital platforms. Attendance can be marked with a simple button click or by entering a unique code.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--About Us-->
+      <div>
+        <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary" id="aboutus">
+          <div class=" px-0">
+            <h1 class="display-4 fst-italic">About Us</h1>
+            <p class="lead my-3">We are a team of five students dedicated to simplifying attendance tracking through our online platform. Our user-friendly interface enables easy attendance management for administrators and attendees alike. Our innovative solution eliminates the challenges of traditional methods, such as paper-based systems, by providing a streamlined process. With real-time tracking, automatic attendance reports, and seamless integration with existing systems, our platform ensures accurate record-keeping for educational institutions, businesses, and organizations. We prioritize data security and privacy, offering a mobile-friendly experience that can be accessed anytime, anywhere. Join us in revolutionizing attendance management and enhancing efficiency in your organization.</p>
+          </div>
+        </div>  
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
